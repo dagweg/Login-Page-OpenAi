@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./login-page.css" />
+</head>
+
+<body>
+    <div class="logo"></div>
+
+    <div class="main-panel">
+        <h1>Welcome back</h1>
+        <div class="email-container">
+            <input type="text" class="email" onfocus="emailFocused()" onblur="emailBlurred()">
+        </div>
+        <button type="button" class="continue">Continue</button>
+        <p>Don't have an account? <a href="#">Sign up</a></p>
+        <div id="divider-or">OR</div>
+        <div class="login-options">
+            <div id="login-google">
+                <i></i>
+                <p>Continue with Google</p>
+            </div>
+            <div id="login-microsoft">
+                <i></i>
+                <p>Continue with Microsoft Account</p>
+            </div>
+            <div id="login-apple">
+                <i></i>
+                <p>Continue with Apple</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="others">
+        <a href="#">Terms of use</a>
+        <span>|</span>
+        <a href="#">Privacy policy</a>
+    </div>
+</body>
+
+<script>
+    const emCt = document.querySelector('.email-container')
+
+    const emailFocused = () => emCt.classList.add('focused')
+    const emailBlurred = () => emCt.classList.remove('focused')
+</script>
+
+</html>
