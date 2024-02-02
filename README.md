@@ -1,5 +1,3 @@
-# ChatGPT Open AI
-
 ##### Its a clone of the website's login page
 
 
